@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="编辑"
+            />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:layout_width="match_parent"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:layout_below="@id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editlayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/Edit"
+        android:layout_width="match_parent"
+        android:layout_above="@id/editbutton"
+        android:layout_alignParentTop="true"
+        android:hint="Type something here"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:paddingBottom = "2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:background="@null"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/editbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="完成"
+            android:layout_width="wrap_content"
+        />
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_width="wrap_content"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
